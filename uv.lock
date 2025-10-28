@@ -1,6 +1,6 @@
 version = 1
 revision = 3
-requires-python = "==3.11"
+requires-python = "==3.11.0"
 
 [[package]]
 name = "absl-py"
@@ -571,6 +571,7 @@ source = { virtual = "." }
 dependencies = [
     { name = "beautifulsoup4" },
     { name = "chromadb" },
+    { name = "dotenv" },
     { name = "gensim" },
     { name = "google-genai" },
     { name = "gradio" },
@@ -600,6 +601,7 @@ dependencies = [
 requires-dist = [
     { name = "beautifulsoup4", specifier = "==4.13.5" },
     { name = "chromadb", specifier = "==1.0.20" },
+    { name = "dotenv", specifier = ">=0.9.9" },
     { name = "gensim", specifier = "==4.3.3" },
     { name = "google-genai", specifier = "==1.33.0" },
     { name = "gradio", specifier = "==5.44.1" },
@@ -623,6 +625,17 @@ requires-dist = [
     { name = "tensorflow", specifier = "==2.20.0" },
     { name = "tensorflow-hub", specifier = "==0.16.1" },
     { name = "umap-learn", specifier = "==0.5.9.post2" },
+]
+
+[[package]]
+name = "dotenv"
+version = "0.9.9"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "python-dotenv" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b2/b7/545d2c10c1fc15e48653c91efde329a790f2eecfbbf2bd16003b5db2bab0/dotenv-0.9.9-py2.py3-none-any.whl", hash = "sha256:29cf74a087b31dafdb5a446b6d7e11cbce8ed2741540e2339c69fbef92c94ce9", size = 1892, upload-time = "2025-02-19T22:15:01.647Z" },
 ]
 
 [[package]]
