@@ -1,0 +1,97 @@
+# LECTURE SEGMENT 2
+## Time segment: 03:00 - 05:00
+
+[EXPLANATION]
+The speaker is explaining the knowledge discovery process, which involves several steps. The process starts with databases, where raw data is stored. This data is then cleaned and integrated, often into a data warehouse. From the data warehouse, relevant data is selected for further analysis. The core of the process is data mining, where patterns are discovered within the selected data. Finally, these patterns are evaluated to assess their usefulness and validity. The speaker emphasizes that this entire process is crucial for extracting valuable knowledge from data.
+
+[SEGMENT TRANSCRIPT]
+[SEGMENT 00:01]
+Okay. So we know about the data mining and what application they could be important. Let's try talking about the process. We call them knowledge discovery process.
+
+[SEGMENT 00:13]
+So what are the knowledge of wisdom right here?
+
+[SEGMENT 00:18]
+Originally, data come from the database.
+
+[SEGMENT 00:27]
+So we actually also have the data warehouse.
+
+[SEGMENT 00:30]
+So the data warehouse is a term people don't know that a lot, but like 20 years ago, it's a very important concept.
+
+[SEGMENT 00:45]
+So after you clean and integrate, you got a lot of data.
+
+[SEGMENT 00:48]
+The data actually stored in data warehouse.
+
+[SEGMENT 00:51]
+So the data warehouse is a term people don't know that a lot, but like 20 years ago, it's a very important concept.
+
+[SEGMENT 00:57]
+And in certain country, there's also important concept still then.
+
+[SEGMENT 01:04]
+And afterward, you select how the data.
+
+[SEGMENT 01:07]
+So we call them selection.
+
+[SEGMENT 01:09]
+And then sending to something we call the pattern.
+
+[SEGMENT 01:13]
+And we go through the data mining process.
+
+[SEGMENT 01:17]
+In order for us to go through this data mining process, then we need to evaluate as our good enough.
+
+[SEGMENT 01:36]
+That is this process.
+
+[COMPLETE TRANSCRIPT]
+[FULL 00:01]
+Okay. So we know about the data mining and what application they could be important. Let's try talking about the process. We call them knowledge discovery process.
+
+[FULL 00:13]
+So what are the knowledge of wisdom right here?
+
+[FULL 00:18]
+Originally, data come from the database.
+
+[FULL 00:27]
+So we actually also have the data warehouse.
+
+[FULL 00:30]
+So the data warehouse is a term people don't know that a lot, but like 20 years ago, it's a very important concept.
+
+[FULL 00:45]
+So after you clean and integrate, you got a lot of data.
+
+[FULL 00:48]
+The data actually stored in data warehouse.
+
+[FULL 00:51]
+So the data warehouse is a term people don't know that a lot, but like 20 years ago, it's a very important concept.
+
+[FULL 00:57]
+And in certain country, there's also important concept still then.
+
+[FULL 01:04]
+And afterward, you select how the data.
+
+[FULL 01:07]
+So we call them selection.
+
+[FULL 01:09]
+And then sending to something we call the pattern.
+
+[FULL 01:13]
+And we go through the data mining process.
+
+[FULL 01:17]
+In order for us to go through this data mining process, then we need to evaluate as our good enough.
+
+[FULL 01:36]
+That is this process.

@@ -1,0 +1,286 @@
+<style>
+.lx-highlight { position: relative; border-radius:3px; padding:1px 2px;}
+.lx-highlight .lx-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 4px;
+  padding: 6px 8px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  max-width: 240px;
+  white-space: normal;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.lx-highlight:hover .lx-tooltip { visibility: visible; opacity:1; }
+.lx-animated-wrapper { max-width: 100%; font-family: Arial, sans-serif; }
+.lx-controls {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 8px;
+  padding: 12px; margin-bottom: 16px;
+}
+.lx-button-row {
+  display: flex; justify-content: center; gap: 8px; margin-bottom: 12px;
+}
+.lx-control-btn {
+  background: #4285f4; color: white; border: none; border-radius: 4px;
+  padding: 8px 16px; cursor: pointer; font-size: 13px; font-weight: 500;
+  transition: background-color 0.2s;
+}
+.lx-control-btn:hover { background: #3367d6; }
+.lx-progress-container {
+  margin-bottom: 8px;
+}
+.lx-progress-slider {
+  width: 100%; margin: 0; appearance: none; height: 6px;
+  background: #ddd; border-radius: 3px; outline: none;
+}
+.lx-progress-slider::-webkit-slider-thumb {
+  appearance: none; width: 18px; height: 18px; background: #4285f4;
+  border-radius: 50%; cursor: pointer;
+}
+.lx-progress-slider::-moz-range-thumb {
+  width: 18px; height: 18px; background: #4285f4; border-radius: 50%;
+  cursor: pointer; border: none;
+}
+.lx-status-text {
+  text-align: center; font-size: 12px; color: #666; margin-top: 4px;
+}
+.lx-text-window {
+  font-family: monospace; white-space: pre-wrap; border: 1px solid #90caf9;
+  padding: 12px; max-height: 260px; overflow-y: auto; margin-bottom: 12px;
+  line-height: 1.6;
+}
+.lx-attributes-panel {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 6px;
+  padding: 8px 10px; margin-top: 8px; font-size: 13px;
+}
+.lx-current-highlight {
+  border-bottom: 4px solid #ff4444;
+  font-weight: bold;
+  animation: lx-pulse 1s ease-in-out;
+}
+@keyframes lx-pulse {
+  0% { text-decoration-color: #ff4444; }
+  50% { text-decoration-color: #ff0000; }
+  100% { text-decoration-color: #ff4444; }
+}
+.lx-legend {
+  font-size: 12px; margin-bottom: 8px;
+  padding-bottom: 8px; border-bottom: 1px solid #e0e0e0;
+}
+.lx-label {
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-right: 4px;
+  color: #000;
+}
+.lx-attr-key {
+  font-weight: 600;
+  color: #1565c0;
+  letter-spacing: 0.3px;
+}
+.lx-attr-value {
+  font-weight: 400;
+  opacity: 0.85;
+  letter-spacing: 0.2px;
+}
+
+/* Add optimizations with larger fonts and better readability for GIFs */
+.lx-gif-optimized .lx-text-window { font-size: 16px; line-height: 1.8; }
+.lx-gif-optimized .lx-attributes-panel { font-size: 15px; }
+.lx-gif-optimized .lx-current-highlight { text-decoration-thickness: 4px; }
+</style>
+    <div class="lx-animated-wrapper lx-gif-optimized">
+      <div class="lx-attributes-panel">
+        <div class="lx-legend">Highlights Legend: <span class="lx-label" style="background-color:#D2E3FC;">key_concept</span> <span class="lx-label" style="background-color:#C8E6C9;">practical_insight</span></div>
+        <div id="attributesContainer"></div>
+      </div>
+      <div class="lx-text-window" id="textWindow">
+        # LECTURE SEGMENT 2
+## Time segment: 03:00 - 05:00
+
+[EXPLANATION]
+The speaker is explaining the <span class="lx-highlight lx-current-highlight" data-idx="0" style="background-color:#D2E3FC;">knowledge discovery process</span>, which involves several steps. The process starts with databases, where raw data is stored. This data is then cleaned and integrated, often into a <span class="lx-highlight" data-idx="1" style="background-color:#D2E3FC;">data warehouse</span>. From the data warehouse, relevant data is selected for further analysis. The core of the process is <span class="lx-highlight" data-idx="2" style="background-color:#D2E3FC;">data mining</span>, where patterns are discovered within the selected data. Finally, these patterns are evaluated to assess their usefulness and validity. <span class="lx-highlight" data-idx="3" style="background-color:#C8E6C9;">The speaker emphasizes that this entire process is crucial for extracting valuable knowledge from data.</span>
+
+[SEGMENT TRANSCRIPT]
+[SEGMENT 00:01]
+Okay. So we know about the data mining and what application they could be important. Let&#x27;s try talking about the process. We call them knowledge discovery process.
+
+[SEGMENT 00:13]
+So what are the knowledge of wisdom right here?
+
+[SEGMENT 00:18]
+Originally, data come from the database.
+
+[SEGMENT 00:27]
+So we actually also have the data warehouse.
+
+[SEGMENT 00:30]
+So the data warehouse is a term people don&#x27;t know that a lot, but like 20 years ago, it&#x27;s a very important concept.
+
+[SEGMENT 00:45]
+So after you clean and integrate, you got a lot of data.
+
+[SEGMENT 00:48]
+The data actually stored in data warehouse.
+
+[SEGMENT 00:51]
+So the data warehouse is a term people don&#x27;t know that a lot, but like 20 years ago, it&#x27;s a very important concept.
+
+[SEGMENT 00:57]
+And in certain country, there&#x27;s also important concept still then.
+
+[SEGMENT 01:04]
+And afterward, you select how the data.
+
+[SEGMENT 01:07]
+So we call them selection.
+
+[SEGMENT 01:09]
+And then sending to something we call the pattern.
+
+[SEGMENT 01:13]
+And we go through the data mining process.
+
+[SEGMENT 01:17]
+In order for us to go through this data mining process, then we need to evaluate as our good enough.
+
+[SEGMENT 01:36]
+That is this process.
+
+[COMPLETE TRANSCRIPT]
+[FULL 00:01]
+Okay. So we know about the <span class="lx-highlight" data-idx="4" style="background-color:#D2E3FC;">data mining and what application they could be important. Let&#x27;s try talking about the process. We call them knowledge discovery process.</span>
+
+[FULL 00:13]
+So what are the knowledge of wisdom right here?
+
+[FULL 00:18]
+<span class="lx-highlight" data-idx="5" style="background-color:#D2E3FC;">Originally, data come from the database.</span>
+
+[FULL 00:27]
+<span class="lx-highlight" data-idx="6" style="background-color:#D2E3FC;">So we actually also have the data warehouse.</span>
+
+[FULL 00:30]
+So the data warehouse is a term people don&#x27;t know that a lot, but like 20 years ago, it&#x27;s a very important concept.
+
+[FULL 00:45]
+So after you clean and integrate, you got a lot of data.
+
+[FULL 00:48]
+The data actually stored in data warehouse.
+
+[FULL 00:51]
+<span class="lx-highlight" data-idx="7" style="background-color:#D2E3FC;"><span class="lx-highlight" data-idx="8" style="background-color:#C8E6C9;">So the data warehouse is a term people don&#x27;t know that a lot, but like 20 years ago, it&#x27;s a very important concept.</span>
+
+[FULL 00:57]
+And in certain country, there&#x27;s also important concept still then.
+
+[FULL 01:04]
+And afterward, you select how the data.
+
+[FULL 01:07]
+So we call them selection.</span>
+
+[FULL 01:09]
+<span class="lx-highlight" data-idx="9" style="background-color:#D2E3FC;">And then sending to something we call the pattern.</span>
+
+[FULL 01:13]
+And we go through the data mining process.
+
+[FULL 01:17]
+<span class="lx-highlight" data-idx="10" style="background-color:#D2E3FC;">In order for us to go through this data mining process, then we need to evaluate as our good enough.</span>
+
+[FULL 01:36]
+That is this process.
+
+      </div>
+      <div class="lx-controls">
+        <div class="lx-button-row">
+          <button class="lx-control-btn" onclick="playPause()">▶️ Play</button>
+          <button class="lx-control-btn" onclick="prevExtraction()">⏮ Previous</button>
+          <button class="lx-control-btn" onclick="nextExtraction()">⏭ Next</button>
+        </div>
+        <div class="lx-progress-container">
+          <input type="range" id="progressSlider" class="lx-progress-slider"
+                 min="0" max="10" value="0"
+                 onchange="jumpToExtraction(this.value)">
+        </div>
+        <div class="lx-status-text">
+          Entity <span id="entityInfo">1/11</span> |
+          Pos <span id="posInfo">[96-123]</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        const extractions = [{"index": 0, "class": "key_concept", "text": "knowledge discovery process", "color": "#D2E3FC", "startPos": 96, "endPos": 123, "beforeText": "# LECTURE SEGMENT 2\n## Time segment: 03:00 - 05:00\n\n[EXPLANATION]\nThe speaker is explaining the ", "extractionText": "knowledge discovery process", "afterText": ", which involves several steps. The process starts with databases, where raw data is stored. This data is then cleaned and integrated, often into a da", "attributesHtml": "<div><strong>class:</strong> key_concept</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">concept_name</span>: <span class=\"lx-attr-value\">Knowledge Discovery Process</span>, <span class=\"lx-attr-key\">definition</span>: <span class=\"lx-attr-value\">A multi-step process for extracting valuable knowledge from data, starting from databases, cleaning and integrating data into a data warehouse, selecting relevant data, performing data mining to discover patterns, and finally evaluating these patterns.</span>, <span class=\"lx-attr-key\">difficulty_rating</span>: <span class=\"lx-attr-value\">Intermediate</span>, <span class=\"lx-attr-key\">simplified_explanation</span>: <span class=\"lx-attr-value\">The steps involved in finding useful information hidden within large amounts of data.</span>}</div>"}, {"index": 1, "class": "key_concept", "text": "data warehouse", "color": "#D2E3FC", "startPos": 271, "endPos": 285, "beforeText": "ss, which involves several steps. The process starts with databases, where raw data is stored. This data is then cleaned and integrated, often into a ", "extractionText": "data warehouse", "afterText": ". From the data warehouse, relevant data is selected for further analysis. The core of the process is data mining, where patterns are discovered withi", "attributesHtml": "<div><strong>class:</strong> key_concept</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">concept_name</span>: <span class=\"lx-attr-value\">Data Warehouse</span>, <span class=\"lx-attr-key\">definition</span>: <span class=\"lx-attr-value\">A central repository of integrated data from one or more disparate sources, used for reporting and data analysis.</span>, <span class=\"lx-attr-key\">difficulty_rating</span>: <span class=\"lx-attr-value\">Intermediate</span>, <span class=\"lx-attr-key\">simplified_explanation</span>: <span class=\"lx-attr-value\">A special database designed to store and manage large amounts of data from various sources for analysis.</span>}</div>"}, {"index": 2, "class": "key_concept", "text": "data mining", "color": "#D2E3FC", "startPos": 387, "endPos": 398, "beforeText": "aned and integrated, often into a data warehouse. From the data warehouse, relevant data is selected for further analysis. The core of the process is ", "extractionText": "data mining", "afterText": ", where patterns are discovered within the selected data. Finally, these patterns are evaluated to assess their usefulness and validity. The speaker e", "attributesHtml": "<div><strong>class:</strong> key_concept</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">concept_name</span>: <span class=\"lx-attr-value\">Data Mining</span>, <span class=\"lx-attr-key\">definition</span>: <span class=\"lx-attr-value\">The process of discovering patterns and insights from large datasets using methods at the intersection of machine learning, statistics, and database systems.</span>, <span class=\"lx-attr-key\">difficulty_rating</span>: <span class=\"lx-attr-value\">Intermediate</span>, <span class=\"lx-attr-key\">simplified_explanation</span>: <span class=\"lx-attr-value\">The technique of finding hidden patterns and useful information in large sets of data.</span>}</div>"}, {"index": 3, "class": "practical_insight", "text": "The speaker emphasizes that this entire process is crucial for extracting valuable knowledge from data.", "color": "#C8E6C9", "startPos": 535, "endPos": 638, "beforeText": "s data mining, where patterns are discovered within the selected data. Finally, these patterns are evaluated to assess their usefulness and validity. ", "extractionText": "The speaker emphasizes that this entire process is crucial for extracting valuable knowledge from data.", "afterText": "\n\n[SEGMENT TRANSCRIPT]\n[SEGMENT 00:01]\nOkay. So we know about the data mining and what application they could be important. Let&#x27;s try talking about th", "attributesHtml": "<div><strong>class:</strong> practical_insight</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">insight_type</span>: <span class=\"lx-attr-value\">Critical Importance</span>, <span class=\"lx-attr-key\">related_concept</span>: <span class=\"lx-attr-value\">Knowledge Discovery Process</span>, <span class=\"lx-attr-key\">summary_of_insight</span>: <span class=\"lx-attr-value\">The complete knowledge discovery process is essential for successfully extracting valuable insights from data.</span>}</div>"}, {"index": 4, "class": "key_concept", "text": "data mining and what application they could be important. Let's try talking about the process. We call them knowledge discovery process.", "color": "#D2E3FC", "startPos": 1960, "endPos": 2096, "beforeText": "s, then we need to evaluate as our good enough.\n\n[SEGMENT 01:36]\nThat is this process.\n\n[COMPLETE TRANSCRIPT]\n[FULL 00:01]\nOkay. So we know about the ", "extractionText": "data mining and what application they could be important. Let&#x27;s try talking about the process. We call them knowledge discovery process.", "afterText": "\n\n[FULL 00:13]\nSo what are the knowledge of wisdom right here?\n\n[FULL 00:18]\nOriginally, data come from the database.\n\n[FULL 00:27]\nSo we actually als", "attributesHtml": "<div><strong>class:</strong> key_concept</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">concept_name</span>: <span class=\"lx-attr-value\">Knowledge Discovery Process</span>, <span class=\"lx-attr-key\">definition</span>: <span class=\"lx-attr-value\">The process of extracting useful information and patterns from data.</span>, <span class=\"lx-attr-key\">difficulty_rating</span>: <span class=\"lx-attr-value\">Intermediate</span>, <span class=\"lx-attr-key\">simplified_explanation</span>: <span class=\"lx-attr-value\">The steps involved in finding hidden insights within large amounts of data.</span>}</div>"}, {"index": 5, "class": "key_concept", "text": "Originally, data come from the database.", "color": "#D2E3FC", "startPos": 2173, "endPos": 2213, "beforeText": " try talking about the process. We call them knowledge discovery process.\n\n[FULL 00:13]\nSo what are the knowledge of wisdom right here?\n\n[FULL 00:18]\n", "extractionText": "Originally, data come from the database.", "afterText": "\n\n[FULL 00:27]\nSo we actually also have the data warehouse.\n\n[FULL 00:30]\nSo the data warehouse is a term people don&#x27;t know that a lot, but like 20 ye", "attributesHtml": "<div><strong>class:</strong> key_concept</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">concept_name</span>: <span class=\"lx-attr-value\">Database</span>, <span class=\"lx-attr-key\">definition</span>: <span class=\"lx-attr-value\">A structured collection of data.</span>, <span class=\"lx-attr-key\">difficulty_rating</span>: <span class=\"lx-attr-value\">Beginner</span>, <span class=\"lx-attr-key\">simplified_explanation</span>: <span class=\"lx-attr-value\">A place where organized information is stored.</span>}</div>"}, {"index": 6, "class": "key_concept", "text": "So we actually also have the data warehouse. So the data warehouse is a term people don't know that a lot, but like 20 years ago, it's a very important concept.", "color": "#D2E3FC", "startPos": 2228, "endPos": 2272, "beforeText": "discovery process.\n\n[FULL 00:13]\nSo what are the knowledge of wisdom right here?\n\n[FULL 00:18]\nOriginally, data come from the database.\n\n[FULL 00:27]\n", "extractionText": "So we actually also have the data warehouse.", "afterText": "\n\n[FULL 00:30]\nSo the data warehouse is a term people don&#x27;t know that a lot, but like 20 years ago, it&#x27;s a very important concept.\n\n[FULL 00:45]\nSo af", "attributesHtml": "<div><strong>class:</strong> key_concept</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">concept_name</span>: <span class=\"lx-attr-value\">Data Warehouse</span>, <span class=\"lx-attr-key\">definition</span>: <span class=\"lx-attr-value\">A system used for reporting and data analysis, considered a core component of the information \u043a\u044a\u0438\u0446\u043a.</span>, <span class=\"lx-attr-key\">difficulty_rating</span>: <span class=\"lx-attr-value\">Intermediate</span>, <span class=\"lx-attr-key\">simplified_explanation</span>: <span class=\"lx-attr-value\">A large storage system designed for analyzing historical data from various sources.</span>}</div>"}, {"index": 7, "class": "key_concept", "text": "So afterward, you select how the data. So we call them selection.", "color": "#D2E3FC", "startPos": 2546, "endPos": 2837, "beforeText": "ncept.\n\n[FULL 00:45]\nSo after you clean and integrate, you got a lot of data.\n\n[FULL 00:48]\nThe data actually stored in data warehouse.\n\n[FULL 00:51]\n", "extractionText": "So the data warehouse is a term people don&#x27;t know that a lot, but like 20 years ago, it&#x27;s a very important concept.\n\n[FULL 00:57]\nAnd in certain country, there&#x27;s also important concept still then.\n\n[FULL 01:04]\nAnd afterward, you select how the data.\n\n[FULL 01:07]\nSo we call them selection.", "afterText": "\n\n[FULL 01:09]\nAnd then sending to something we call the pattern.\n\n[FULL 01:13]\nAnd we go through the data mining process.\n\n[FULL 01:17]\nIn order for ", "attributesHtml": "<div><strong>class:</strong> key_concept</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">concept_name</span>: <span class=\"lx-attr-value\">Data Selection</span>, <span class=\"lx-attr-key\">definition</span>: <span class=\"lx-attr-value\">The process of choosing relevant data for analysis.</span>, <span class=\"lx-attr-key\">difficulty_rating</span>: <span class=\"lx-attr-value\">Beginner</span>, <span class=\"lx-attr-key\">simplified_explanation</span>: <span class=\"lx-attr-value\">Picking out the specific data needed for a particular task.</span>}</div>"}, {"index": 8, "class": "practical_insight", "text": "So the data warehouse is a term people don't know that a lot, but like 20 years ago, it's a very important concept.", "color": "#C8E6C9", "startPos": 2546, "endPos": 2661, "beforeText": "ncept.\n\n[FULL 00:45]\nSo after you clean and integrate, you got a lot of data.\n\n[FULL 00:48]\nThe data actually stored in data warehouse.\n\n[FULL 00:51]\n", "extractionText": "So the data warehouse is a term people don&#x27;t know that a lot, but like 20 years ago, it&#x27;s a very important concept.", "afterText": "\n\n[FULL 00:57]\nAnd in certain country, there&#x27;s also important concept still then.\n\n[FULL 01:04]\nAnd afterward, you select how the data.\n\n[FULL 01:07]\n", "attributesHtml": "<div><strong>class:</strong> practical_insight</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">insight_type</span>: <span class=\"lx-attr-value\">Critical Importance</span>, <span class=\"lx-attr-key\">related_concept</span>: <span class=\"lx-attr-value\">Data Warehouse</span>, <span class=\"lx-attr-key\">summary_of_insight</span>: <span class=\"lx-attr-value\">Data warehouses were a very important concept historically, even if less commonly known now.</span>}</div>"}, {"index": 9, "class": "key_concept", "text": "And then sending to something we call the pattern. And we go through the data mining process.", "color": "#D2E3FC", "startPos": 2852, "endPos": 2902, "beforeText": "ere&#x27;s also important concept still then.\n\n[FULL 01:04]\nAnd afterward, you select how the data.\n\n[FULL 01:07]\nSo we call them selection.\n\n[FULL 01:09]\n", "extractionText": "And then sending to something we call the pattern.", "afterText": "\n\n[FULL 01:13]\nAnd we go through the data mining process.\n\n[FULL 01:17]\nIn order for us to go through this data mining process, then we need to evalua", "attributesHtml": "<div><strong>class:</strong> key_concept</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">concept_name</span>: <span class=\"lx-attr-value\">Data Mining</span>, <span class=\"lx-attr-key\">definition</span>: <span class=\"lx-attr-value\">The process of discovering patterns in large data sets.</span>, <span class=\"lx-attr-key\">difficulty_rating</span>: <span class=\"lx-attr-value\">Intermediate</span>, <span class=\"lx-attr-key\">simplified_explanation</span>: <span class=\"lx-attr-value\">Using computer programs to find interesting trends and relationships in data.</span>}</div>"}, {"index": 10, "class": "key_concept", "text": "In order for us to go through this data mining process, then we need to evaluate as our good enough.", "color": "#D2E3FC", "startPos": 2974, "endPos": 3074, "beforeText": "em selection.\n\n[FULL 01:09]\nAnd then sending to something we call the pattern.\n\n[FULL 01:13]\nAnd we go through the data mining process.\n\n[FULL 01:17]\n", "extractionText": "In order for us to go through this data mining process, then we need to evaluate as our good enough.", "afterText": "\n\n[FULL 01:36]\nThat is this process.\n", "attributesHtml": "<div><strong>class:</strong> key_concept</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">concept_name</span>: <span class=\"lx-attr-value\">Evaluation</span>, <span class=\"lx-attr-key\">definition</span>: <span class=\"lx-attr-value\">Assessing the quality or usefulness of the results from the data mining process.</span>, <span class=\"lx-attr-key\">difficulty_rating</span>: <span class=\"lx-attr-value\">Beginner</span>, <span class=\"lx-attr-key\">simplified_explanation</span>: <span class=\"lx-attr-value\">Checking if the discovered patterns are meaningful and useful.</span>}</div>"}];
+        let currentIndex = 0;
+        let isPlaying = false;
+        let animationInterval = null;
+        let animationSpeed = 1.0;
+
+        function updateDisplay() {
+          const extraction = extractions[currentIndex];
+          if (!extraction) return;
+
+          document.getElementById('attributesContainer').innerHTML = extraction.attributesHtml;
+          document.getElementById('entityInfo').textContent = (currentIndex + 1) + '/' + extractions.length;
+          document.getElementById('posInfo').textContent = '[' + extraction.startPos + '-' + extraction.endPos + ']';
+          document.getElementById('progressSlider').value = currentIndex;
+
+          const playBtn = document.querySelector('.lx-control-btn');
+          if (playBtn) playBtn.textContent = isPlaying ? '⏸ Pause' : '▶️ Play';
+
+          const prevHighlight = document.querySelector('.lx-text-window .lx-current-highlight');
+          if (prevHighlight) prevHighlight.classList.remove('lx-current-highlight');
+          const currentSpan = document.querySelector('.lx-text-window span[data-idx="' + currentIndex + '"]');
+          if (currentSpan) {
+            currentSpan.classList.add('lx-current-highlight');
+            currentSpan.scrollIntoView({block: 'center', behavior: 'smooth'});
+          }
+        }
+
+        function nextExtraction() {
+          currentIndex = (currentIndex + 1) % extractions.length;
+          updateDisplay();
+        }
+
+        function prevExtraction() {
+          currentIndex = (currentIndex - 1 + extractions.length) % extractions.length;
+          updateDisplay();
+        }
+
+        function jumpToExtraction(index) {
+          currentIndex = parseInt(index);
+          updateDisplay();
+        }
+
+        function playPause() {
+          if (isPlaying) {
+            clearInterval(animationInterval);
+            isPlaying = false;
+          } else {
+            animationInterval = setInterval(nextExtraction, animationSpeed * 1000);
+            isPlaying = true;
+          }
+          updateDisplay();
+        }
+
+        window.playPause = playPause;
+        window.nextExtraction = nextExtraction;
+        window.prevExtraction = prevExtraction;
+        window.jumpToExtraction = jumpToExtraction;
+
+        updateDisplay();
+      })();
+    </script>
